@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="600" y="40" text-anchor="middle" font-family="Arial" font-size="30" fill="#0f172a" font-weight="bold">Multi-Vendor E-Commerce Platform - High-Level Architecture</text>
+
+  <rect x="70" y="90" width="280" height="170" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="210" y="125" text-anchor="middle" font-family="Arial" font-size="20" fill="#1e3a8a" font-weight="bold">Frontend Apps</text>
+  <text x="100" y="160" font-family="Arial" font-size="16" fill="#1e3a8a">• Customer Storefront (React)</text>
+  <text x="100" y="190" font-family="Arial" font-size="16" fill="#1e3a8a">• Vendor Dashboard (React)</text>
+  <text x="100" y="220" font-family="Arial" font-size="16" fill="#1e3a8a">• Admin Console (React)</text>
+
+  <rect x="450" y="90" width="300" height="280" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="600" y="125" text-anchor="middle" font-family="Arial" font-size="20" fill="#14532d" font-weight="bold">Node + Express API Layer</text>
+  <text x="480" y="160" font-family="Arial" font-size="16" fill="#14532d">• Auth &amp; User Service</text>
+  <text x="480" y="190" font-family="Arial" font-size="16" fill="#14532d">• Catalog Service</text>
+  <text x="480" y="220" font-family="Arial" font-size="16" fill="#14532d">• Cart/Checkout &amp; Orders</text>
+  <text x="480" y="250" font-family="Arial" font-size="16" fill="#14532d">• Vendor Operations</text>
+  <text x="480" y="280" font-family="Arial" font-size="16" fill="#14532d">• Admin Moderation APIs</text>
+  <text x="480" y="310" font-family="Arial" font-size="16" fill="#14532d">• Notification/Webhook Service</text>
+
+  <rect x="850" y="90" width="280" height="200" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="990" y="125" text-anchor="middle" font-family="Arial" font-size="20" fill="#7f1d1d" font-weight="bold">Data + Infra</text>
+  <text x="880" y="160" font-family="Arial" font-size="16" fill="#7f1d1d">• MongoDB (primary DB)</text>
+  <text x="880" y="190" font-family="Arial" font-size="16" fill="#7f1d1d">• Redis (cache/sessions)</text>
+  <text x="880" y="220" font-family="Arial" font-size="16" fill="#7f1d1d">• Object Storage (media)</text>
+  <text x="880" y="250" font-family="Arial" font-size="16" fill="#7f1d1d">• Queue Workers (async jobs)</text>
+
+  <rect x="120" y="420" width="960" height="220" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="600" y="455" text-anchor="middle" font-family="Arial" font-size="22" fill="#4c1d95" font-weight="bold">Core Marketplace Domains</text>
+  <text x="170" y="500" font-family="Arial" font-size="17" fill="#4c1d95">• Customer Journey: Browse → Cart → Checkout → Track Orders → Reviews</text>
+  <text x="170" y="535" font-family="Arial" font-size="17" fill="#4c1d95">• Vendor Journey: Onboarding → Product CRUD → Fulfillment → Settlements</text>
+  <text x="170" y="570" font-family="Arial" font-size="17" fill="#4c1d95">• Admin Journey: Approvals → Moderation → Disputes → Policy Enforcement</text>
+  <text x="170" y="605" font-family="Arial" font-size="17" fill="#4c1d95">• Security: RBAC, JWT + Refresh Tokens, Validation, Audit Trails</text>
+
+  <line x1="350" y1="175" x2="450" y2="175" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="750" y1="190" x2="850" y2="190" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="600" y1="370" x2="600" y2="420" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#334155"/>
+    </marker>
+  </defs>
+</svg>

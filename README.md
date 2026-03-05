@@ -6,6 +6,9 @@ Production-ready starter for a multi-vendor marketplace with:
 - **React (Vite)** frontend for customers and vendors.
 - **Docker Compose** for one-command local deployment.
 
+## Why this project is trending
+Marketplace systems showcase full-stack mastery because they combine domain modeling, role-based security, transactional order/payment workflows, and scalable architecture patterns in one product.
+
 ## Features implemented
 - Auth: register/login with role (`customer`, `vendor`, `admin`).
 - Product catalog: list approved products publicly.
@@ -13,6 +16,16 @@ Production-ready starter for a multi-vendor marketplace with:
 - Customer checkout: create orders from cart items.
 - Order tracking: customers can view their orders.
 - API health endpoint and seed script.
+
+## Core feature scope (blueprint)
+### Customer
+- Browse catalog, add to cart, place orders, and track own order history.
+
+### Vendor
+- Manage own products and monitor incoming vendor-related orders.
+
+### Admin
+- Role available in data model/auth flow and can access vendor/admin-protected endpoints.
 
 ## Project structure
 
@@ -81,4 +94,4 @@ Services:
 - Set a strong `JWT_SECRET` in production.
 - Restrict CORS via `CLIENT_URL`.
 - Run API and web behind TLS termination (e.g., Nginx/Cloud LB).
-- Add payment gateway, object storage, and background jobs for full production scale.
+- Add payment gateway, object storage, background jobs, and stronger validation/error handling for full production scale.
